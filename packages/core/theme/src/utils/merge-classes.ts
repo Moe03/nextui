@@ -4,7 +4,7 @@ export type SlotsToClasses<S extends string> = Partial<Record<S, string | string
 
 /**
  * Merge classes utility function
- * 
+ *
  * @param itemClasses - The item classes
  * @param itemPropsClasses - The item props classes
  * @returns The merged classes
