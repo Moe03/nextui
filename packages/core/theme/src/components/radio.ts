@@ -1,7 +1,7 @@
 import type {VariantProps} from "tailwind-variants";
 
 import {tv} from "../utils/tv";
-import {groupDataFocusVisibleClasses} from "../utils";
+import {groupDataFocusVisibleClasses, hiddenInputClasses} from "../utils";
 
 /**
  * Radio wrapper **Tailwind Variants** component
@@ -28,6 +28,7 @@ import {groupDataFocusVisibleClasses} from "../utils";
 const radio = tv({
   slots: {
     base: "group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2 select-none",
+    hiddenInput: hiddenInputClasses,
     wrapper: [
       "relative",
       "inline-flex",

@@ -56,6 +56,21 @@ export const translateCenterClasses = [
 export const absoluteFullClasses = ["vg-absolute", "vg-inset-0"];
 
 /**
+ * Hidden input classes for checkbox, radio, switch components.
+ * These classes visually hide the native input while keeping it accessible.
+ */
+export const hiddenInputClasses = [
+  "vg-peer",
+  "vg-absolute",
+  "vg-w-full",
+  "vg-h-full",
+  "vg-opacity-0",
+  "vg-cursor-pointer",
+  "vg-z-10",
+  "vg-inset-0",
+];
+
+/**
  * This object defines CSS classes for collapsing adjacent variant borders.
  * It includes classes for different variants like default, primary, secondary, etc.
  */

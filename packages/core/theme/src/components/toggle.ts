@@ -1,7 +1,7 @@
 import type {VariantProps} from "tailwind-variants";
 
 import {tv} from "../utils/tv";
-import {groupDataFocusVisibleClasses} from "../utils";
+import {groupDataFocusVisibleClasses, hiddenInputClasses} from "../utils";
 
 /**
  * Toggle (Switch) wrapper **Tailwind Variants** component
@@ -31,6 +31,7 @@ import {groupDataFocusVisibleClasses} from "../utils";
 const toggle = tv({
   slots: {
     base: "group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none",
+    hiddenInput: hiddenInputClasses,
     wrapper: [
       "px-1",
       "relative",
