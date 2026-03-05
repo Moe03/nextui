@@ -301,10 +301,10 @@ export function usePopover(originalProps: UsePopoverProps) {
   );
 
   useEffect(() => {
-    if (state.isOpen && domRef?.current) {
+    if (state.isOpen && !isNonModal && domRef?.current) {
       return ariaHideOutside([domRef?.current]);
     }
-  }, [state.isOpen, domRef]);
+  }, [state.isOpen, isNonModal, domRef]);
 
   return {
     state,
